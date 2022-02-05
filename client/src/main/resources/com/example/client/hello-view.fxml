@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="896.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.StageController">
+   <children>
+      <Button layoutX="41.0" layoutY="382.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="97.0" text="Send" onAction="#onHelloButtonClick"/>
+      <TextField layoutX="90.0" layoutY="109.0" prefHeight="33.0" prefWidth="199.0" fx:id="test"/>
+      <TextField layoutX="90.0" layoutY="158.0" prefHeight="33.0" prefWidth="199.0" />
+      <TextField layoutX="90.0" layoutY="208.0" prefHeight="33.0" prefWidth="199.0" />
+      <TextField layoutX="90.0" layoutY="253.0" prefHeight="33.0" prefWidth="199.0" />
+      <Label alignment="CENTER" layoutX="11.0" layoutY="105.0" prefHeight="41.0" prefWidth="55.0" text="l" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="11.0" layoutY="154.0" prefHeight="41.0" prefWidth="55.0" text="F" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="204.0" prefHeight="41.0" prefWidth="55.0" text="p" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="249.0" prefHeight="41.0" prefWidth="55.0" text="s" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <LineChart layoutX="327.0" layoutY="53.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</Pane>
