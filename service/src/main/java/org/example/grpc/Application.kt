@@ -1,4 +1,4 @@
-package com.example.grpc.services
+package org.example.grpc
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
