@@ -4,12 +4,14 @@ import javafx.application.Application
 import javafx.fxml.FXMLLoader
 import javafx.scene.Scene
 import javafx.stage.Stage
+import org.springframework.boot.autoconfigure.SpringBootApplication
 
-class ClientApplication : Application() {
+@SpringBootApplication
+open class ClientApplication : Application() {
     override fun start(stage: Stage) {
-        val fxmlLoader = FXMLLoader(ClientApplication::class.java.getResource("hello-view.fxml"))
-        val scene = Scene(fxmlLoader.load(), 320.0, 240.0)
-        stage.title = "Hello!"
+        val fxmlLoader = FXMLLoader(ClientApplication::class.java.getResource("client-view.fxml"))
+        val scene = Scene(fxmlLoader.load(), 900.0, 500.0)
+        stage.title = "Client!"
         stage.scene = scene
         stage.show()
     }
