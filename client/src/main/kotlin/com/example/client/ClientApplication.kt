@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 open class ClientApplication : Application() {
     override fun start(stage: Stage) {
         val fxmlLoader = FXMLLoader(ClientApplication::class.java.getResource("client-view.fxml"))
-        val scene = Scene(fxmlLoader.load(), 900.0, 500.0)
+        val scene = Scene(fxmlLoader.load(), 1100.0, 700.0)
         stage.title = "Client!"
         stage.scene = scene
         stage.show()

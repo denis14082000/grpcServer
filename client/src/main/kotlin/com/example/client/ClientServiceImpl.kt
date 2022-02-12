@@ -7,17 +7,21 @@ class ClientServiceImpl(
         private val clientGrpcService: ClientGrpcService
 ): ClientService {
 
-    override fun count(countDto: CountDto): Double {
+    override fun count(countDto: CountDto): List<Double> {
         val request = MathServiceRequestDto(
-                l = countDto.l.toDouble(),
-                h = countDto.h.toDouble(),
-                p = countDto.p.toDouble(),
-                s = countDto.s.toDouble(),
+                N = countDto.N.toDouble(),
+                L = countDto.L.toDouble(),
+                lm = countDto.lm.toDouble(),
+                Tl = countDto.Tl.toDouble(),
+                ro = countDto.ro.toDouble(),
+                tEnd = countDto.tEnd.toDouble(),
+                c = countDto.c.toDouble(),
+                t0 = countDto.t0.toDouble()
         )
 
         val response = clientGrpcService.sendBlockingRequest(request)
 
-        return response.answer
+        return response.answerList
     }
 
 }

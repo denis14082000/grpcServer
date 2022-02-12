@@ -1,7 +1,6 @@
 package com.example.client
 
 import MathServiceOuterClass
-import com.example.client.MathServiceRequestDto
 
 interface ClientGrpcService {
 

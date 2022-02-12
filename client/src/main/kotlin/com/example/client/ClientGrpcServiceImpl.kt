@@ -1,5 +1,7 @@
 package com.example.client
 
+import MathServiceGrpc
+import MathServiceOuterClass
 import io.grpc.Channel
 import io.grpc.ManagedChannelBuilder
 import org.lognet.springboot.grpc.GRpcService
@@ -28,10 +30,14 @@ class ClientGrpcServiceImpl: ClientGrpcService {
 
     private fun getRequest(mathServiceRequestDto: MathServiceRequestDto): MathServiceOuterClass.MathRequest {
         return MathServiceOuterClass.MathRequest.newBuilder()
-                .setS(mathServiceRequestDto.s)
-                .setL(mathServiceRequestDto.l)
-                .setH(mathServiceRequestDto.h)
-                .setP(mathServiceRequestDto.p)
+                .setN(mathServiceRequestDto.N)
+                .setL(mathServiceRequestDto.L)
+                .setLambda(mathServiceRequestDto.lm)
+                .setTl(mathServiceRequestDto.Tl)
+                .setRo(mathServiceRequestDto.ro)
+                .setT(mathServiceRequestDto.tEnd)
+                .setC(mathServiceRequestDto.c)
+                .setT0(mathServiceRequestDto.t0)
                 .build()
     }
 

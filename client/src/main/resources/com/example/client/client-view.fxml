@@ -1,45 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.chart.*?>
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import javafx.geometry.*?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.Button?>
-
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="896.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.StageController">
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="1046.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.StageController">
    <children>
-      <Button layoutX="41.0" layoutY="382.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="97.0" text="Send" onAction="#onSendButtonClick"/>
-      <TextField layoutX="90.0" layoutY="109.0" prefHeight="33.0" prefWidth="199.0" fx:id="l"/>
-      <TextField layoutX="90.0" layoutY="158.0" prefHeight="33.0" prefWidth="199.0" fx:id="f"/>
-      <TextField layoutX="90.0" layoutY="208.0" prefHeight="33.0" prefWidth="199.0" fx:id="p"/>
-      <TextField layoutX="90.0" layoutY="253.0" prefHeight="33.0" prefWidth="199.0" fx:id="s"/>
-      <Label alignment="CENTER" layoutX="11.0" layoutY="105.0" prefHeight="41.0" prefWidth="55.0" text="l" textAlignment="CENTER">
+      <Button layoutX="50.0" layoutY="549.0" mnemonicParsing="false" onAction="#onSendButtonClick" prefHeight="33.0" prefWidth="97.0" text="Send" />
+      <TextField fx:id="N" layoutX="98.0" layoutY="73.0" prefHeight="33.0" prefWidth="199.0" />
+      <TextField fx:id="L" layoutX="98.0" layoutY="120.0" prefHeight="33.0" prefWidth="199.0" />
+      <TextField fx:id="lm" layoutX="98.0" layoutY="177.0" prefHeight="33.0" prefWidth="199.0" />
+      <TextField fx:id="ro" layoutX="98.0" layoutY="234.0" prefHeight="33.0" prefWidth="199.0" />
+      <TextField fx:id="Tl" layoutX="98.0" layoutY="404.0" prefHeight="33.0" prefWidth="199.0" />
+      <TextField fx:id="tEnd" layoutX="98.0" layoutY="465.0" prefHeight="33.0" prefWidth="199.0" />
+      <TextField fx:id="c" layoutX="98.0" layoutY="297.0" prefHeight="33.0" prefWidth="199.0" />
+      <TextField fx:id="t0" layoutX="98.0" layoutY="353.0" prefHeight="33.0" prefWidth="199.0" />
+      <Label alignment="CENTER" layoutX="28.0" layoutY="69.0" prefHeight="41.0" prefWidth="55.0" text="N" textAlignment="CENTER">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="11.0" layoutY="154.0" prefHeight="41.0" prefWidth="55.0" text="F" textAlignment="CENTER">
+      <Label alignment="CENTER" layoutX="28.0" layoutY="116.0" prefHeight="41.0" prefWidth="55.0" text="L" textAlignment="CENTER">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="14.0" layoutY="204.0" prefHeight="41.0" prefWidth="55.0" text="p" textAlignment="CENTER">
+      <Label alignment="CENTER" layoutX="28.0" layoutY="169.0" prefHeight="41.0" prefWidth="55.0" text="lm" textAlignment="CENTER">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="14.0" layoutY="249.0" prefHeight="41.0" prefWidth="55.0" text="s" textAlignment="CENTER">
+      <Label alignment="CENTER" layoutX="28.0" layoutY="230.0" prefHeight="41.0" prefWidth="55.0" text="ro" textAlignment="CENTER">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <LineChart layoutX="327.0" layoutY="53.0" fx:id="chart">
+      <LineChart fx:id="chart" layoutX="347.0" layoutY="73.0" prefHeight="421.0" prefWidth="671.0">
         <xAxis>
           <NumberAxis side="BOTTOM" />
         </xAxis>
@@ -47,5 +44,26 @@
           <NumberAxis side="LEFT" />
         </yAxis>
       </LineChart>
+      <Button layoutX="198.0" layoutY="549.0" mnemonicParsing="false" onAction="#onClearFieldsButtonClick" prefHeight="33.0" prefWidth="97.0" text="Clear fields" />
+      <Label alignment="CENTER" layoutX="28.0" layoutY="293.0" prefHeight="41.0" prefWidth="55.0" text="c" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="28.0" layoutY="349.0" prefHeight="41.0" prefWidth="55.0" text="T0" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="28.0" layoutY="400.0" prefHeight="41.0" prefWidth="55.0" text="Tl" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="28.0" layoutY="461.0" prefHeight="41.0" prefWidth="55.0" text="T_end" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
    </children>
 </Pane>
