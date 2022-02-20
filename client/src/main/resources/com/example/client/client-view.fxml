@@ -5,38 +5,16 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.*?>
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="1046.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.StageController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="1039.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.StageController">
    <children>
-      <Button layoutX="50.0" layoutY="549.0" mnemonicParsing="false" onAction="#onSendButtonClick" prefHeight="33.0" prefWidth="97.0" text="Send" />
-      <TextField fx:id="N" layoutX="98.0" layoutY="73.0" prefHeight="33.0" prefWidth="199.0" />
-      <TextField fx:id="L" layoutX="98.0" layoutY="120.0" prefHeight="33.0" prefWidth="199.0" />
-      <TextField fx:id="lm" layoutX="98.0" layoutY="177.0" prefHeight="33.0" prefWidth="199.0" />
-      <TextField fx:id="ro" layoutX="98.0" layoutY="234.0" prefHeight="33.0" prefWidth="199.0" />
-      <TextField fx:id="Tl" layoutX="98.0" layoutY="404.0" prefHeight="33.0" prefWidth="199.0" />
-      <TextField fx:id="tEnd" layoutX="98.0" layoutY="465.0" prefHeight="33.0" prefWidth="199.0" />
-      <TextField fx:id="c" layoutX="98.0" layoutY="297.0" prefHeight="33.0" prefWidth="199.0" />
-      <TextField fx:id="t0" layoutX="98.0" layoutY="353.0" prefHeight="33.0" prefWidth="199.0" />
-      <Label alignment="CENTER" layoutX="28.0" layoutY="69.0" prefHeight="41.0" prefWidth="55.0" text="N" textAlignment="CENTER">
+      <Button layoutX="286.0" layoutY="533.0" mnemonicParsing="false" onAction="#onSendButtonClick" prefHeight="33.0" prefWidth="97.0" text="Send" />
+      <TextField layoutX="99.0" layoutY="36.0" prefHeight="33.0" prefWidth="136.0" fx:id="x" />
+      <Label alignment="CENTER" layoutX="28.0" layoutY="32.0" prefHeight="41.0" prefWidth="55.0" text="Xstart" textAlignment="CENTER">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="28.0" layoutY="116.0" prefHeight="41.0" prefWidth="55.0" text="L" textAlignment="CENTER">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" layoutX="28.0" layoutY="169.0" prefHeight="41.0" prefWidth="55.0" text="lm" textAlignment="CENTER">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" layoutX="28.0" layoutY="230.0" prefHeight="41.0" prefWidth="55.0" text="ro" textAlignment="CENTER">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <LineChart fx:id="chart" layoutX="347.0" layoutY="73.0" prefHeight="421.0" prefWidth="671.0">
+      <LineChart fx:id="chart" layoutX="121.0" layoutY="142.0" prefHeight="377.0" prefWidth="829.0">
         <xAxis>
           <NumberAxis side="BOTTOM" />
         </xAxis>
@@ -44,23 +22,45 @@
           <NumberAxis side="LEFT" />
         </yAxis>
       </LineChart>
-      <Button layoutX="198.0" layoutY="549.0" mnemonicParsing="false" onAction="#onClearFieldsButtonClick" prefHeight="33.0" prefWidth="97.0" text="Clear fields" />
-      <Label alignment="CENTER" layoutX="28.0" layoutY="293.0" prefHeight="41.0" prefWidth="55.0" text="c" textAlignment="CENTER">
+      <Button layoutX="680.0" layoutY="533.0" mnemonicParsing="false" onAction="#onClearFieldsButtonClick" prefHeight="33.0" prefWidth="97.0" text="Clear fields" />
+      <Label alignment="CENTER" layoutX="28.0" layoutY="79.0" prefHeight="41.0" prefWidth="55.0" text="Xend" textAlignment="CENTER">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="28.0" layoutY="349.0" prefHeight="41.0" prefWidth="55.0" text="T0" textAlignment="CENTER">
+      <TextField fx:id="tEnd1" layoutX="96.0" layoutY="83.0" prefHeight="33.0" prefWidth="136.0" />
+      <Label alignment="CENTER" layoutX="527.0" layoutY="34.0" prefHeight="41.0" prefWidth="55.0" text="Ystart" textAlignment="CENTER">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="28.0" layoutY="400.0" prefHeight="41.0" prefWidth="55.0" text="Tl" textAlignment="CENTER">
+      <TextField fx:id="y" layoutX="592.0" layoutY="37.0" prefHeight="33.0" prefWidth="136.0" />
+      <TextField fx:id="tEnd21" layoutX="592.0" layoutY="84.0" prefHeight="33.0" prefWidth="136.0" />
+      <Label alignment="CENTER" layoutX="527.0" layoutY="80.0" prefHeight="41.0" prefWidth="55.0" text="Yend" textAlignment="CENTER">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="28.0" layoutY="461.0" prefHeight="41.0" prefWidth="55.0" text="T_end" textAlignment="CENTER">
+      <Label alignment="CENTER" layoutX="262.0" layoutY="79.0" prefHeight="41.0" prefWidth="55.0" text="dX" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tEnd3" layoutX="334.0" layoutY="83.0" prefHeight="33.0" prefWidth="136.0" />
+      <TextField fx:id="tEnd31" layoutX="334.0" layoutY="40.0" prefHeight="33.0" prefWidth="136.0" />
+      <Label alignment="CENTER" layoutX="244.0" layoutY="36.0" prefHeight="41.0" prefWidth="90.0" text="Xchange" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="736.0" layoutY="35.0" prefHeight="41.0" prefWidth="90.0" text="Xchange" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tEnd311" layoutX="826.0" layoutY="39.0" prefHeight="33.0" prefWidth="136.0" />
+      <TextField fx:id="tEnd32" layoutX="826.0" layoutY="82.0" prefHeight="33.0" prefWidth="136.0" />
+      <Label alignment="CENTER" layoutX="754.0" layoutY="78.0" prefHeight="41.0" prefWidth="55.0" text="dX" textAlignment="CENTER">
          <font>
             <Font size="20.0" />
          </font>

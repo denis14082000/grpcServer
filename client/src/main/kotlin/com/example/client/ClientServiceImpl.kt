@@ -9,14 +9,8 @@ class ClientServiceImpl(
 
     override fun count(countDto: CountDto): List<Double> {
         val request = MathServiceRequestDto(
-                N = countDto.N.toDouble(),
-                L = countDto.L.toDouble(),
-                lm = countDto.lm.toDouble(),
-                Tl = countDto.Tl.toDouble(),
-                ro = countDto.ro.toDouble(),
-                tEnd = countDto.tEnd.toDouble(),
-                c = countDto.c.toDouble(),
-                t0 = countDto.t0.toDouble()
+                x = countDto.x.toDouble(),
+                y = countDto.y.toLong()
         )
 
         val response = clientGrpcService.sendBlockingRequest(request)

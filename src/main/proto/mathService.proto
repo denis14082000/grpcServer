@@ -1,15 +1,8 @@
 syntax = "proto3";
 
 message MathRequest {
-  double N = 1;
-  double L = 2;
-  double lambda = 3;
-  double ro = 4;
-  double c = 5;
-  double T0 = 6;
-  double Tl = 7;
-  double Tr = 8;
-  double t = 9;
+  double x = 1;
+  int64 y = 2;
 }
 
 message MathResponse {

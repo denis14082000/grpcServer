@@ -30,14 +30,8 @@ class ClientGrpcServiceImpl: ClientGrpcService {
 
     private fun getRequest(mathServiceRequestDto: MathServiceRequestDto): MathServiceOuterClass.MathRequest {
         return MathServiceOuterClass.MathRequest.newBuilder()
-                .setN(mathServiceRequestDto.N)
-                .setL(mathServiceRequestDto.L)
-                .setLambda(mathServiceRequestDto.lm)
-                .setTl(mathServiceRequestDto.Tl)
-                .setRo(mathServiceRequestDto.ro)
-                .setT(mathServiceRequestDto.tEnd)
-                .setC(mathServiceRequestDto.c)
-                .setT0(mathServiceRequestDto.t0)
+                .setX(mathServiceRequestDto.x)
+                .setY(mathServiceRequestDto.y)
                 .build()
     }
 
